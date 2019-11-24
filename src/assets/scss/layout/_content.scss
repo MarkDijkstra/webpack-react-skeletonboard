@@ -1,0 +1,19 @@
+/*
+Project     : Skeletonboard
+Filename    : _content.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+*/
+
+.content-main{
+  width : 100%;
+  float : left;
+
+  min-height : calc(100vh - 182px);
+
+  &__inner{
+     padding : 20px;
+  }
+
+}

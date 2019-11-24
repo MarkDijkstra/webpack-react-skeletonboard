@@ -1,0 +1,21 @@
+/*
+Project     : Skeletonboard
+Filename    : core.scss
+Version     : 1.0.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+*/
+
+@charset "utf-8";
+
+// BASE
+@import "base/_normalize";
+
+// LAYOUT
+@import "layout/_body";
+@import "layout/_header";
+@import "layout/_content";
+@import "layout/_footer";
+
+// THEMING
+@import "theming/_default";

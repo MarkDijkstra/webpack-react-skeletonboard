@@ -1,0 +1,23 @@
+{
+  "name": "webpack-react-skeletonboard",
+  "version": "0.0.1",
+  "description": "Simple setup with react, webpack\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D dashboard with webpack and\u001b[3~ react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkDijkstra/webpack-react-skeletonboard.git"
+  },
+  "author": "Mark Dijkstra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkDijkstra/webpack-react-skeletonboard/issues"
+  },
+  "homepage": "https://github.com/MarkDijkstra/webpack-react-skeletonboard#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

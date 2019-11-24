@@ -1,0 +1,19 @@
+/*
+Project     : Skeletonboard
+Filename    : _header.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+*/
+
+.sidebar-main{
+
+  width  : 200px;
+  height : 100%;
+  float  : left;
+
+  &__inner{
+     padding:20px;
+  }
+
+}
