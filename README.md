@@ -1,2 +1,2 @@
-# webpack-react-skeletonbard
+# webpack-react-skeletonboard
 WIP
