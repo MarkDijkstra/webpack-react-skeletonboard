@@ -1,0 +1,20 @@
+/*
+Project     : Skeletonboard
+Filename    : _footer.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+*/
+
+.footer-main{
+    width  : 100%;
+    height : 60px;
+    float  : left;
+    
+    display: none;
+
+    &__inner{
+        padding : 20px;
+     }
+
+}
