@@ -1,18 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-// import { InfoProvider } from './components/context';
-// import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from "react";
+import {render} from "react-dom";
+import {Router, Route} from "react-router";
+// import {Router, Route,  IndexRoute} from "react-router";
+import { createBrowserHistory } from "history";
 
-ReactDOM.render(
-    <Router>
-    <App />
-    </Router>,
-    document.getElementById('root')
-);
+const history = createBrowserHistory();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-//serviceWorker.unregister();
+
+import {App} from "./App";
+import {Home} from "./components/pages/Home";
+import {User} from "./components/pages/User";
+
+class Root extends React.Component {
+    render() {
+        return <Router history={history}>
+        <Route path={"/"} component={App} >
+        <Route path={"user/:id"} component={User} />
+        <Route path={"home"} component={Home} />
+        </Route>
+        <Route path={"home-single"} component={Home}/>
+        </Router>;
+    }
+
+}
+
+render(<Root />, window.document.getElementById('root'));
+console.log('index running');

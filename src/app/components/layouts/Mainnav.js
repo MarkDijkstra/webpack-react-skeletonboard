@@ -5,20 +5,8 @@ import { Link } from 'react-router-dom';
 function Mainnav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-        <a className="navbar-brand ml-5" href="#">
+        <a className="navbar-brand ml-5" href="#"> logo </a>
 
-       </a>
-    <button className="navbar-toggler" type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-        >
-        <span>
-        <i className="fas fa-bars" style={{ color: '#fff' }} />
-    </span>
-    </button>
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav m-auto">
