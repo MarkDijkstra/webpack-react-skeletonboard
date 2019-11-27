@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');// get CSS
 const HtmlWebpackPlugin = require('html-webpack-plugin');//make a template file -> dist folder
@@ -5,6 +7,9 @@ const TerserJSPlugin = require('terser-webpack-plugin');// js minification
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');//css minification
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');//clean dist folder before building new
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const DIST_DIR = path.resolve(__dirname, "dist");
+const SRC_DIR = path.resolve(__dirname, "src");
 
 module.exports = {
     watch: true,
@@ -22,16 +27,16 @@ module.exports = {
         hints: false
     },
     entry: {
-        bundle: ["./src/assets/css/main.css" ,  "./src/assets/scss/core.scss"],
+        bundle: [SRC_DIR + "/assets/css/main.css" ,  SRC_DIR + "/assets/scss/core.scss"],
         "bundle.js": [
-            path.resolve(__dirname, './index.js'),
-            path.resolve(__dirname, './src/assets/js/core.js'),
-            path.resolve(__dirname, './src/assets/js/modules.js')
+            SRC_DIR + "/app/index.js",
+            SRC_DIR + '/assets/js/core.js',
+            //SRC_DIR + '/src/assets/js/test.js'
         ],
     },
     output: {
         filename: 'assets/js/[name]',
-        path: path.resolve(__dirname, 'dist'),
+        path: DIST_DIR,
     },
     plugins: [
          new CleanWebpackPlugin(),
@@ -51,6 +56,30 @@ module.exports = {
     ],
     module: {
          rules: [
+             {test: /\.js$/ ,
+                 use:[
+                     {
+                         loader:'babel-loader'
+                     }
+                 ],
+                 exclude: '/node_modules/'
+             },
+             {test: /\.jsx$/ ,
+                 use:[
+                     {
+                         loader:'babel-loader'
+                     }
+                 ],
+                 exclude: '/node_modules/'
+             },
+            {
+                 test: /\.(png|jpe?g|gif)$/i,
+                 use: [
+                     {
+                         loader: 'file-loader',
+                     },
+                 ],
+             },
              {
                  test: /\.css$/,
                  use: [

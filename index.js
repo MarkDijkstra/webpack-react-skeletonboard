@@ -18,5 +18,4 @@ if (process.env.NODE_ENV === 'production') {
     console.log('Looks like we are in production mode!');
 }
 
-
 console.log('running index...123456789');
