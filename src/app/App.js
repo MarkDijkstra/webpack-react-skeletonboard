@@ -1,21 +1,18 @@
 import React from "react";
 import {Header} from "./components/layouts/Header";
+import {Footer} from "./components/layouts/Footer";
 
 export class App extends React.Component {
     render() {
-        return <div className="container">
-            <div className="row">
-            <div className="col-xs-10 col-xs-offset-1">
-            <Header />
+        return <div class="container__main">
+        <Header />
+            <div class="content-main">
+                <div class="content-main__inner">
+                    {this.props.children}
+                </div>
             </div>
-            </div>
-            <hr/>
-            <div className="row">
-            <div className="col-xs-10 col-xs-offset-1">
-            {this.props.children}
-            </div>
-            </div>
-            </div>;
+            <Footer />
+        </div>;
     }
 }
 

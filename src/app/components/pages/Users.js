@@ -1,10 +1,9 @@
 import React from "react";
 
-export class Home extends React.Component {
+export class Users extends React.Component {
     render() {
         return <div>
-            <h3>Home</h3>
+            <h3>Users</h3>
             </div>;
     }
-
 }

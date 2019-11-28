@@ -1,15 +1,24 @@
 import React from "react";
-import {Link} from "react-router";
+import {Link} from "react-router-dom";
 
 export const Header = (props) => {
-    return <nav className="navbar navbar-default">
-        <div className="container">
-        <div className="navbar-header">
-        <ul className="nav navbar-nav">
-        <li><Link to={"/home"} activeStyle={{color: "red"}}>Home</Link></li>
-    <li><Link to={"/user/10"} activeClassName={"active"}>User</Link></li>
-    </ul>
-    </div>
-    </div>
-    </nav>;
+    return <div class="header-main">
+               <div class="header-main__inner" role="banner">
+                    <div class="header-main__logo">
+                     Skeleton
+                    </div>
+                    <div class="header-main__nav">
+                        <nav>
+                            <Link to={"/home"}>Home</Link>
+                            <Link to={"/pages"}>Pages</Link>
+                            <Link to={"/users"}>Users</Link>
+                        </nav>
+                        <div class="header-main__user">
+                           <span>
+                              <img src="./assets/images/user.jpg"/>
+                           </span>
+                        </div>
+                    </div>
+               </div>
+           </div>;
 };

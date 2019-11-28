@@ -6,17 +6,18 @@ import { createBrowserHistory } from "history";
 
 const history = createBrowserHistory();
 
-
 import {App} from "./App";
 import {Home} from "./components/pages/Home";
-import {User} from "./components/pages/User";
+import {Users} from "./components/pages/Users";
+import {Pages} from "./components/pages/Pages";
 
 class Root extends React.Component {
     render() {
         return <Router history={history}>
         <Route path={"/"} component={App} >
-        <Route path={"user/:id"} component={User} />
-        <Route path={"home"} component={Home} />
+            <Route path={"users/:id"} component={Users} />
+            <Route path={"home"} component={Home} />
+            <Route path={"pages"} component={Pages} />
         </Route>
         <Route path={"home-single"} component={Home}/>
         </Router>;
