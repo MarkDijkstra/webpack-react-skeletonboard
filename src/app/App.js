@@ -1,18 +1,40 @@
 import React from "react";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch,
+    useParams
+} from "react-router-dom";
+
+
 import {Header} from "./components/layouts/Header";
 import {Footer} from "./components/layouts/Footer";
 
+import {Home} from "./components/pages/Home";
+import {Users} from "./components/pages/Users";
+import {Pages} from "./components/pages/Pages";
+
 export class App extends React.Component {
     render() {
-        return <div class="container__main">
-        <Header />
-            <div class="content-main">
-                <div class="content-main__inner">
-                    {this.props.children}
-                </div>
-            </div>
-            <Footer />
-        </div>;
+        return (
+            <Router>
+                 <Header/>
+                    <div className="content-main">
+                        <div className="content-main__inner">
+                            <Switch>
+                                <Route path="/" exact component={Home}/>
+                                <Route path="/users" >
+            <Users/>
+            </Route>
+                                <Route path="/pages" component={Pages}/>
+                            </Switch>
+                        </div>
+                    </div>
+                <Footer/>
+            </Router>
+            );
     }
 }
 

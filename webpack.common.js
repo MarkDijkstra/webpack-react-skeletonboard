@@ -1,5 +1,3 @@
-'use strict';
-
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');// get CSS
 const HtmlWebpackPlugin = require('html-webpack-plugin');//make a template file -> dist folder
@@ -37,6 +35,7 @@ module.exports = {
     output: {
         filename: 'assets/js/[name]',
         path: DIST_DIR,
+        publicPath: '/',
     },
     plugins: [
          new CleanWebpackPlugin(),
