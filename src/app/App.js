@@ -25,9 +25,7 @@ export class App extends React.Component {
                         <div className="content-main__inner">
                             <Switch>
                                 <Route path="/" exact component={Home}/>
-                                <Route path="/users" >
-            <Users/>
-            </Route>
+                                <Route path="/users" component={Users}/>
                                 <Route path="/pages" component={Pages}/>
                             </Switch>
                         </div>

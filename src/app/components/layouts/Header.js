@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link , NavLink } from "react-router-dom";
 
 // export const Header = (props) => {
 // //     return <div class="header-main">
@@ -52,9 +52,9 @@ export const Header = (props) => {
                     </div>
                     <div className="header-main__nav">
                         <nav>
-                        <Link to="/" >Home</Link>
-                        <Link to="/pages">Pages</Link>
-                        <Link to="/users">Users</Link>
+                        <NavLink activeClassName='is-active' exact to="/" >Home</NavLink>
+                        <NavLink activeClassName='is-active' to="/pages">Pages</NavLink>
+                        <NavLink activeClassName='is-active' to="/users">Users</NavLink>
                         </nav>
                         <div className="header-main__user">
                             <span>
