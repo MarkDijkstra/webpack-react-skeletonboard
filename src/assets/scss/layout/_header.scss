@@ -25,8 +25,7 @@ Last change : --/--/----
         line-height : 60px;
         position    : relative;
         font-weight : bold;
-        
-        
+
         &:after{  
             
             content      : "";  
@@ -63,6 +62,10 @@ Last change : --/--/----
                 float           : left;
                 line-height     : 58px;
                 padding         : 0 15px;
+
+                &.active__nav {
+                   text-decoration: underline;
+                }
 
             }
            
