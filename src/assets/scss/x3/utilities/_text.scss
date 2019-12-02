@@ -1,0 +1,60 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : _text.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+.x3_text--{
+
+    &capitalize,
+    &uppercase{
+        text-transform : uppercase!important;
+    }
+
+    &bold{
+       font-family : "OpenSansBold"!important;
+       font-weight : bold!important;
+    }
+
+    &italic{
+        font-style : italic!important;
+    }
+
+    &underline{
+        text-decoration : underline!important;
+    }
+
+    &right{
+        text-align : right!important;
+    }
+
+    &left{
+        text-align : left!important;
+    }
+
+    &center{
+        text-align : center!important;
+    }
+
+    &faded{
+        opacity : 0.5;
+    }
+
+}
+
+.x3_fontsize--{
+
+    &16{
+
+        font-size : 16px;
+
+    }
+}

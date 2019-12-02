@@ -10,7 +10,7 @@ export const Header = (props) => {
                     </div>
                     <div className="header-main__nav">
                         <nav>
-                        <NavLink activeClassName='active__nav' exact to="/" >Home</NavLink>
+                        <NavLink activeClassName='active__nav' exact to="/">Home</NavLink>
                         <NavLink activeClassName='active__nav' to="/pages">Pages</NavLink>
                         <NavLink activeClassName='active__nav' to="/users">Users</NavLink>
                         </nav>

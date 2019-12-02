@@ -1,0 +1,75 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : _noti.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+.x3_noti{
+
+    padding        : 7px 16px 9px 16px;
+    opacity        : 1;
+    pointer-events : all;
+    transition     : opacity 0.2s linear;
+    z-index        : 10;
+
+    &--close{
+        float  : right;
+        cursor : pointer;
+    }
+
+    &--yellow{
+
+        @extend .colorset--yellow;
+
+        hr{
+
+            border-top-color : #333;
+            opacity          : 0.2;
+
+        }
+
+    }
+
+    &--hidden{
+
+        opacity        : 0;
+        pointer-events : none;
+        transition     : opacity 0.2s linear;
+        z-index        : -1;
+        display        : none;
+
+    }
+
+    &--orange{
+        @extend .colorset--orange;
+    }
+
+    &--red{
+        @extend .colorset--red;
+    }
+
+    &--blue{
+        @extend .colorset--blue;
+    }
+
+    &--green{
+        @extend .colorset--green;
+    }
+
+    &--white{
+        @extend .colorset--white;
+    }
+
+    &--grey{
+        @extend .colorset--grey;
+    }
+
+}

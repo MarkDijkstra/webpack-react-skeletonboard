@@ -1,0 +1,35 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : components/_faq.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+.x3_faq{
+
+    list-style : none;
+    padding    : 0;
+
+    &__container{
+
+    }
+
+    &__item{
+
+    }
+
+    .faq-toggle{
+        i{
+            float      : right;
+            margin-top : 24px;
+        }
+    }
+
+}

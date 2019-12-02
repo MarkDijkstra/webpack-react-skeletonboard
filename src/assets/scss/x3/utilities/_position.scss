@@ -1,0 +1,35 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : _position
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+.x3_float--{
+
+    &left{
+        float : left!important;
+    }
+
+    &right{
+        float : right!important;
+    }
+
+}
+
+.x3_position--{
+
+    &relative{
+     
+        position : relative;
+
+    }
+
+}

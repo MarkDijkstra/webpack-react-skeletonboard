@@ -1,0 +1,140 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : x3/components/_preloaders.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+https://github.com/ConnorAtherton/loaders.css
+
+*/
+
+@keyframes scaleDot {
+     0% {
+         transform : scale(1);
+         opacity   : 1;
+     }
+     45% {
+         transform : scale(0.1);
+         opacity   : 0.7;
+     }
+     80% {
+         transform : scale(1);
+         opacity   : 1;
+     }
+}
+
+@-moz-keyframes scaleDot {
+    0% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    45% {
+        transform : scale(0.1);
+        opacity   : 0.7;
+    }
+    80% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+
+@-o-keyframes scaleDot {
+    0% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    45% {
+        transform : scale(0.1);
+        opacity   : 0.7;
+    }
+    80% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+
+@-ms-keyframes scaleDot {
+    0% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    45% {
+        transform : scale(0.1);
+        opacity   : 0.7;
+    }
+    80% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+
+@-webkit-keyframes scaleDot {
+    0% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    45% {
+        transform : scale(0.1);
+        opacity   : 0.7;
+    }
+    80% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+
+@function delay($interval, $count, $index) {
+    @return ($index * $interval) - ($interval * $count);
+}
+
+// mixins should be separated out
+@mixin ball-pulse($n: 3, $start: 1) {
+    @for $i from $start through $n {
+        > span:nth-child(#{$i}) {
+            animation : scaleDot 2s delay(0.12s, $n, $i) infinite cubic-bezier(.2,.68,.18,1.08);
+        }
+    }
+}
+
+.csspreloader__{
+
+    &typing{
+
+        @include ball-pulse();
+
+        width    : 40px;
+        height   : 10px;
+        position : relative;
+
+        span{
+
+            width               : 10px;
+            height              : 10px;
+            background-color    : #ccc;
+            position            : absolute;
+            animation-fill-mode : both;
+            border-radius       : 100%;
+
+            &:nth-child(1){
+                left : 0;
+            }
+
+            &:nth-child(2){
+                left : 15px;
+            }
+
+            &:nth-child(3){
+                left : 30px;
+            }
+
+        }
+
+    }
+
+}

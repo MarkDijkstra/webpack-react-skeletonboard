@@ -1,0 +1,79 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : _tables.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+.x3_table{
+
+    display         : table;
+    width           : 100%;
+    border          : none!important;
+    border-collapse : collapse!important;
+    vertical-align  : top;
+
+    tbody{
+        vertical-align : top;
+    }
+
+    caption{
+        padding     : 13px 10px;
+        font-weight : bold;
+
+        @extend .x3_colorset--primary;
+    }
+
+    tr{
+        z-index : 1;
+    }
+
+    td,th{
+        padding : 12px 10px;
+        border  : 1px solid $color--border!important;
+    }
+
+    &--striped{
+        tr:nth-of-type(even){
+            background-color : rgba(237 , 237 ,237 , 0.2);
+        }
+    }
+    &--hover{
+        tbody{
+            tr{
+                &:hover{
+                    background-color : #feffd6;
+                }
+
+            }
+        }
+    }
+
+    &--responsive{
+       // position : relative;
+        //overflow-y : auto;
+    }
+
+}
+
+.x3_tablewrapper--responsive{
+    overflow-y: auto;
+}
+.x3_row--odd{
+    background-color : rgba(237 , 237 ,237 , 0.2);
+}
+
+.x3_thead--grey{
+
+    td,th {
+        background-color : $color--grey;
+    }
+
+}

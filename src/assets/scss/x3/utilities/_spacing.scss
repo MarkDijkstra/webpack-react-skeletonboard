@@ -1,0 +1,55 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : _spacing
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+@for $i from 0 through 20{
+
+    $nsize : $x3_unit * $i;
+
+    .x3_m--#{$i}{  margin        : $nsize !important; }
+    .x3_mt--#{$i}{ margin-top    : $nsize !important; }
+    .x3_mr--#{$i}{ margin-right  : $nsize !important; }
+    .x3_mb--#{$i}{ margin-bottom : $nsize !important; }
+    .x3_ml--#{$i}{ margin-left   : $nsize !important; }
+
+    .x3_mx--#{$i}{
+        margin-left  : $nsize !important;
+        margin-right : $nsize !important;
+    }
+
+    .x3_my--#{$i}{
+        margin-top    : $nsize !important;
+        margin-bottom : $nsize !important;
+    }
+
+    .x3_p--#{$i}{  padding        : $nsize !important; }
+    .x3_pt--#{$i}{ padding-top    : $nsize !important; }
+    .x3_pr--#{$i}{ padding-right  : $nsize !important; }
+    .x3_pb--#{$i}{ padding-bottom : $nsize !important; }
+    .x3_pl--#{$i}{ padding-left   : $nsize !important; }
+
+    .x3_px--#{$i}{
+        padding-left  : $nsize !important;
+        padding-right : $nsize !important;
+    }
+
+    .x3_py--#{$i}{
+        padding-top    : $nsize !important;
+        padding-bottom : $nsize !important;
+    }
+
+}
+
+.x3_mr--3--min{
+    margin-right: -15px!important;
+}

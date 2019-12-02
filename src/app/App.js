@@ -21,17 +21,17 @@ export class App extends React.Component {
     render() {
         return (
             <Router>
-                 <Header/>
-                    <div className="content-main">
-                        <div className="content-main__inner">
-                            <Switch>
-                                <Route path="/" exact component={Home}/>
-                                <Route path="/users" component={Users}/>
-                                <Route path="/pages" component={Pages}/>
-                                <Route component={NotFound} />
-                            </Switch>
-                        </div>
+                <Header/>
+                <div className="content-main">
+                    <div className="content-main__inner">
+                        <Switch>
+                            <Route path="/" exact component={Home}/>
+                            <Route path="/users" component={Users}/>
+                            <Route path="/pages" component={Pages}/>
+                            <Route component={NotFound} />
+                        </Switch>
                     </div>
+                </div>
                 <Footer/>
             </Router>
             );

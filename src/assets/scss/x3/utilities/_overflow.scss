@@ -1,0 +1,40 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : x3/utilities/_overflow.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+.x3_overflow{
+
+    &{
+
+    }
+
+    &--hidden{
+
+        overflow : hidden!important;
+
+
+        &--x{
+
+            overflow-x : hidden!important;
+
+        }
+
+        &--y{
+
+            overflow-y : hidden!important;
+
+        }
+
+    }
+
+}

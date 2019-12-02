@@ -1,0 +1,116 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : themeing/_colors.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+// Colorset @ https://coderwall.com/p/rn1uxq/
+
+//Note, missing prefeix -> .colorsets
+
+
+
+$x3-color--green   : #27ae60;
+$x3-color--red     : #c0392b;
+$x3-color--primary : #006bb3;
+
+.colorset--,
+.x3_colorset--{
+
+    &yellow{
+        border           : 1px solid #f39c12!important;
+        background-color : #f1c40f!important;
+        color            : #333!important;
+    }
+
+    &orange{
+        border           : 1px solid #d35400!important;
+        background-color : #e67e22!important;
+        color            : #fff!important;
+    }
+
+    &red{
+        border           : 1px solid $x3-color--red!important;
+        background-color : $x3-color--red!important;
+        color            : #fff!important;
+    }
+
+    &blue{
+        border           : 1px solid #2980b9!important;
+        background-color : #3498d8!important;
+        color            : #fff!important;
+    }
+
+    &green{
+        border           : 1px solid $x3-color--green!important;
+        background-color : $x3-color--green!important;
+        color            : #fff!important;
+    }
+
+    &white{
+        border           : 1px solid #ddd!important;
+        background-color : #fff!important;
+        color            : #333!important;
+    }
+
+    &grey{
+        border           : 1px solid #bdc3c7!important;
+        background-color : #ecf0f1!important;
+        color            : #333!important;
+    }
+
+    &darkgrey{
+        border           : 1px solid #999!important;
+        background-color : #999!important;
+        color            : #fff!important;
+    }
+
+    &primary{
+        border           : 1px solid $x3-color--primary!important;
+        background-color : $x3-color--primary!important;
+        color            : #fff!important;
+    }
+
+    &secondary{
+        border           : 1px solid #0d1b3e!important;
+        background-color : #0d1b3e!important;
+        color            : #fff!important;
+    }
+
+    &cta{
+        border           : 1px solid #FD5B03!important;
+        background-color : #FD5B03!important;
+        color            : #fff!important;
+    }
+
+    &outline{
+        border           : 1px solid #ccc!important;
+        background-color : #fff!important;
+        color            : #333!important;
+    }
+
+}
+
+.x3_bgcolor--white{
+    background-color : #fff!important;
+}
+
+.x3_textcolor--,
+.x3_text__color--{
+
+    &red {
+        color: $x3-color--red !important;
+    }
+
+    &primary {
+        color: $x3-color--primary !important;
+    }
+
+}

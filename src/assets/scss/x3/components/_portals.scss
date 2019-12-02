@@ -1,0 +1,29 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : _portals.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+.portal--block{ display : none; }
+.portal--nl_nl .portal--nl_nl.portal--block { display : block; }
+.portal--be_nl .portal--be_nl.portal--block { display : block; }
+.portal--be_fr .portal--be_fr.portal--block { display : block; }
+.portal--gb_en .portal--gb_en.portal--block { display : block; }
+.portal--us_en .portal--us_en.portal--block { display : block; }
+.portal--us_es .portal--us_es.portal--block { display : block; }
+.portal--fr_fr .portal--fr_fr.portal--block { display : block; }
+.portal--de_de .portal--de_de.portal--block { display : block; }
+.portal--at_es .portal--at_es.portal--block { display : block; }
+.portal--ch_de .portal--ch_de.portal--block { display : block; }
+.portal--ch_fr .portal--ch_fr.portal--block { display : block; }
+.portal--ch_it .portal--ch_it.portal--block { display : block; }
+.portal--es_es .portal--es_es.portal--block { display : block; }
+.portal--it_it .portal--it_it.portal--block { display : block; }

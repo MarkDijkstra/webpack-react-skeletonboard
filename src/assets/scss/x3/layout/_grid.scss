@@ -1,0 +1,92 @@
+/*
+
+-------------------------------------
+
+Project     : X3
+Filename    : layout/_grid.scss
+Version     : 1.0
+Author      : Mark Dijkstra
+Last change : --/--/----
+
+-------------------------------------
+
+*/
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+@if $enable-grid-classes {
+  .x3_container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but with 100% width for
+// fluid, full width layouts.
+
+@if $enable-grid-classes {
+    .x3_container--fluid {
+       @include make-container();
+    }
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+@if $enable-grid-classes {
+
+  .x3_row {
+      @include make-row();
+  }
+
+  // Remove the negative margin from default .row, then the horizontal padding
+  // from all immediate children columns (to prevent runaway style inheritance).
+      .x3_{
+
+        &no--gutters {
+
+            margin-right : 0;
+            margin-left  : 0;
+
+            > .x3_col,
+            > [class*="x3_col--"] {
+              padding-right : 0;
+              padding-left  : 0;
+            }
+
+        }
+
+        &gutter--10{
+             margin-left: -5px;
+             margin-right: -5px;
+
+        }
+    }
+
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@if $enable-grid-classes {
+  @include make-grid-columns();
+}
+
+
+//.x3_container{
+//  &:after {
+//    content : "";
+//    display : table;
+//    clear   : both;
+//  }
+//}
+
+//.x3_row--flex{
+//    display : flex;
+//}
