@@ -11,22 +11,21 @@ Last change : --/--/----
 -------------------------------------
 
 */
-// Colorset @ https://coderwall.com/p/rn1uxq/
 
-//Note, missing prefeix -> .colorsets
+// Colorset @ https://flatuicolors.com/palette/se
 
-
-
-$x3-color--green   : #27ae60;
-$x3-color--red     : #c0392b;
+$x3-color--green   : #05c46b;
+$x3-color--red     : #ff3f34;
 $x3-color--primary : #006bb3;
+$x3-color--blue    : #0fbcf9;
+$x3-color--yellow  : #ffd32a;
 
 .colorset--,
 .x3_colorset--{
 
     &yellow{
-        border           : 1px solid #f39c12!important;
-        background-color : #f1c40f!important;
+        border           : 1px solid $x3-color--yellow!important;
+        background-color : $x3-color--yellow!important;
         color            : #333!important;
     }
 
@@ -43,8 +42,8 @@ $x3-color--primary : #006bb3;
     }
 
     &blue{
-        border           : 1px solid #2980b9!important;
-        background-color : #3498d8!important;
+        border           : 1px solid $x3-color--blue!important;
+        background-color : $x3-color--blue!important;
         color            : #fff!important;
     }
 

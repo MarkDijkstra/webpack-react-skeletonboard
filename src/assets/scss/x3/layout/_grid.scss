@@ -18,8 +18,8 @@ Last change : --/--/----
 
 @if $enable-grid-classes {
   .x3_container {
-    @include make-container();
-    @include make-container-max-widths();
+     @include make-container();
+     @include make-container-max-widths();
   }
 }
 
@@ -66,6 +66,7 @@ Last change : --/--/----
              margin-right: -5px;
 
         }
+
     }
 
 }
@@ -90,3 +91,10 @@ Last change : --/--/----
 //.x3_row--flex{
 //    display : flex;
 //}
+
+
+.x3_container--xl{
+   max-width  : 1440px;
+   margin : auto;
+   padding: 0 15px;
+}

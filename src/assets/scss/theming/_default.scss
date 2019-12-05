@@ -6,14 +6,14 @@ Author      : Mark Dijkstra
 Last change : --/--/----
 */
 
-// https://flatuicolors.com/palette/cn
+// https://flatuicolors.com/palette/se
 
-$color-body-bg    : #f0f1f5;
-$color-header-bg  : #2f3542;
-$color-primary    : #ff4757;
-$color-white-text : #ffffff;
-
-$color-dark      : #373e4d;
+$color-body-bg          : #f0f1f5;
+$color-header-top-bg    : #3c40c6;
+$color-header-bottom-bg : #ffffff;
+$color-primary          : #ff4757;
+$color-white-text       : #ffffff;
+$color-dark             : #373e4d;
 
 
 body{
@@ -21,19 +21,29 @@ body{
 }
 
 .header-main{
-    background-color : $color-header-bg;
-    color            : $color-white-text;
-    box-shadow       : 0 4px 4px -2px #999;
+
+    &__top{
+        background : $color-header-top-bg;
+       // background : linear-gradient(to left, rgba(237,76,103,1) 0%, rgba(181,52,112,1) 100%);
+        color      : $color-white-text;
+    }
+
+    &__bottom{
+        background-color    : $color-header-bottom-bg;
+        border-bottom-color : #ddd;
+        //box-shadow       : 0 4px 4px -2px #999;
+    }
     
     &__logo{
-        background-color : $color-primary;
+        //background-color : $color-primary;
         color            : $color-white-text;
         
         &:after{  
 
-            border-color : $color-primary transparent transparent transparent;
+            //border-color : $color-primary transparent transparent transparent;
 
         }
+
     }
     
     nav{
@@ -46,29 +56,24 @@ body{
 
     &__nav{
 
+       // background-color : $color-dark;
 
-        background-color : $color-dark;
-        
-        
         &:after{  
             
-            border-color : transparent $color-dark transparent transparent;
+            //border-color : transparent $color-dark transparent transparent;
 
         }
-        
-        
+
         
     }
     
 }
 
-
-
-
-
 .footer-main{
+
     background-color : #fff;
     color            : #555;
     border-top       : 1px solid #ccc;
+
 }
 
