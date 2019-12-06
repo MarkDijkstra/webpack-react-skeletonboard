@@ -35,13 +35,13 @@ module.exports = {
     output: {
         filename: 'assets/js/[name]',
         path: DIST_DIR,
-        publicPath: '/',
+        //publicPath: '',
     },
     plugins: [
          new CleanWebpackPlugin(),
          new HtmlWebpackPlugin({
              hash: true,
-             filename: 'index.html',
+             //filename: 'index.html',
              template: 'src/index.html'
          }),
          new MiniCssExtractPlugin({
