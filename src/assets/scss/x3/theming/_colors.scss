@@ -14,11 +14,15 @@ Last change : --/--/----
 
 // Colorset @ https://flatuicolors.com/palette/se
 
-$x3-color--green   : #05c46b;
-$x3-color--red     : #ff3f34;
-$x3-color--primary : #006bb3;
-$x3-color--blue    : #0fbcf9;
-$x3-color--yellow  : #ffd32a;
+
+
+
+$x3-color--green    : #05c46b;
+$x3-color--red      : #ff3f34;
+$x3-color--primary  : $color-primary;
+$x3_color-secondary : $color-secondary;
+$x3-color--blue     : #0fbcf9;
+$x3-color--yellow   : #ffd32a;
 
 .colorset--,
 .x3_colorset--{
@@ -78,8 +82,8 @@ $x3-color--yellow  : #ffd32a;
     }
 
     &secondary{
-        border           : 1px solid #0d1b3e!important;
-        background-color : #0d1b3e!important;
+        border           : 1px solid $x3_color-secondary!important;
+        background-color : $x3_color-secondary!important;
         color            : #fff!important;
     }
 

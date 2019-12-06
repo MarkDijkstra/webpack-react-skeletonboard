@@ -8,24 +8,21 @@ Last change : --/--/----
 
 // https://colors.muz.li/palette/454d66/309975/58b368/dad873/efeeb4
 
+
+$color-body-text        : #555555;
 $color-body-bg          : #f0f1f5;
-$color-header-top-bg    : #454d66;
+$color-primary          : #454d66;
+$color-secondary        : #309975;
+
 $color-header-bottom-bg : #ffffff;
-$color-primary          : #ff4757;
 $color-white-text       : #ffffff;
 $color-dark             : #373e4d;
 
 
-body{
-   background-color : $color-body-bg;
-}
-
 .header-main{
 
     &__top{
-        background : $color-header-top-bg;
-       // background : linear-gradient(to left, rgba(237,76,103,1) 0%, rgba(181,52,112,1) 100%);
-        color      : $color-white-text;
+
     }
 
     &__bottom{
@@ -77,3 +74,11 @@ body{
 
 }
 
+.card{
+    border: 1px solid #e6e9f0;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 4px rgba(52,59,68,.07);
+}

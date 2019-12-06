@@ -11,6 +11,9 @@ Last change : --/--/----
 // BASE
 @import "base/_normalize";
 
+// THEMING
+@import "theming/_default";
+
 // X3 (framework)
 @import "x3/x3";
 
@@ -22,6 +25,3 @@ Last change : --/--/----
 
 // COMPONENTS
 @import "components/_text";
-
-// THEMING
-@import "theming/_default";

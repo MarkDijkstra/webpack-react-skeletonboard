@@ -5,7 +5,6 @@ import {SubHeaderHome} from "./headers/Home";
 import {SubHeaderPages} from "./headers/Pages";
 import {SubHeaderUsers} from "./headers/Users";
 
-
 export const Header = (props) => {
 
     return  <div className="header-main">

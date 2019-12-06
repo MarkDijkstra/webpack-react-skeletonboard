@@ -155,6 +155,16 @@ Last change : --/--/----
 
     }
 
+    &--secondary{
+
+      &,
+      &:focus,
+      &:hover{
+        @extend .x3_colorset--secondary;
+      }
+
+    }
+
     &--grey{
 
         &--outline{
