@@ -45,32 +45,32 @@ Last change : --/--/----
         cursor : pointer;
     }
 
-    &--yellow{
-        @extend .colorset--yellow;
+    &--alert{
+        @extend .x3-colorset--alert;
     }
 
-    &--orange{
-        @extend .colorset--orange;
+//    &--orange{
+//        @extend .colorset--orange;
+//    }
+
+    &--danger{
+        @extend .x3-colorset--danger;
     }
 
-    &--red{
-        @extend .colorset--red;
+    &--info{
+        @extend .x3-colorset--info;
     }
 
-    &--blue{
-        @extend .colorset--blue;
-    }
-
-    &--green{
-        @extend .colorset--green;
+    &--succes{
+        @extend .x3-colorset--succes;
     }
 
     &--white{
-        @extend .colorset--white;
+        @extend .x3-colorset--white;
     }
 
     &--grey{
-        @extend .colorset--grey;
+        @extend .x3-colorset--grey;
     }
 
 }

@@ -100,37 +100,47 @@ Last change : --/--/----
         &,
         &:focus,
         &:hover{
-            @extend .x3_colorset--secondary;
+            @extend .x3-colorset--secondary;
         }
 
     }
 
-    &--orange{
+    &--danger{
 
         &,
         &:focus,
         &:hover{
-            @extend .x3_colorset--orange;
+            @extend .x3-colorset--danger;
         }
 
     }
 
-    &--red{
+    &--succes{
 
         &,
         &:focus,
         &:hover{
-            @extend .x3_colorset--red;
+            @extend .x3-colorset--succes;
         }
 
     }
-
-    &--green{
+    
+    &--info{
 
         &,
         &:focus,
         &:hover{
-            @extend .x3_colorset--green;
+            @extend .x3-colorset--info;
+        }
+
+    }
+    
+    &--alert{
+
+        &,
+        &:focus,
+        &:hover{
+            @extend .x3-colorset--alert;
         }
 
     }
@@ -140,7 +150,7 @@ Last change : --/--/----
         &,
         &:focus,
         &:hover{
-            @extend .x3_colorset--cta;
+            @extend .x3-colorset--cta;
         }
 
     }
@@ -150,7 +160,7 @@ Last change : --/--/----
         &,
         &:focus,
         &:hover{
-            @extend .x3_colorset--primary;
+            @extend .x3-colorset--primary;
         }
 
     }
@@ -160,7 +170,7 @@ Last change : --/--/----
       &,
       &:focus,
       &:hover{
-        @extend .x3_colorset--secondary;
+        @extend .x3-colorset--secondary;
       }
 
     }
@@ -279,7 +289,7 @@ Last change : --/--/----
 
         .x3_toggleswitchbutton__switch {
 
-            background-color : $x3-color--green;
+            background-color : $x3-color--succes;
             border           : 1px solid #228255;
             transition       : background-color 0.3s linear , border 0.3s linear;
 

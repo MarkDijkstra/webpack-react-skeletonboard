@@ -12,9 +12,11 @@ Last change : --/--/----
     float  : left;
     
     display: none;
+    
+    background-color : $theme-white;
 
     &__inner{
         padding : 20px;
-     }
+    }
 
 }

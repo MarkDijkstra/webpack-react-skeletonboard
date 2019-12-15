@@ -14,46 +14,38 @@ Last change : --/--/----
 
 // Colorset @ https://flatuicolors.com/palette/se
 
+$x3-color--primary   : $theme-primary;
+$x3_color--secondary : $theme-secondary;
 
-
-
-$x3-color--green    : #05c46b;
-$x3-color--red      : #ff3f34;
-$x3-color--primary  : $color-primary;
-$x3_color-secondary : $color-secondary;
-$x3-color--blue     : #0fbcf9;
-$x3-color--yellow   : #ffd32a;
+$x3-color--succes    : $theme-notification-succes;
+$x3-color--danger    : $theme-notification-danger;
+$x3-color--info      : $theme-notification-info;
+$x3-color--alert     : $theme-notification-alert;
 
 .colorset--,
-.x3_colorset--{
+.x3-colorset--{
 
-    &yellow{
-        border           : 1px solid $x3-color--yellow!important;
-        background-color : $x3-color--yellow!important;
+    &alert{
+        border           : 1px solid $x3-color--alert!important;
+        background-color : $x3-color--alert!important;
         color            : #333!important;
     }
 
-    &orange{
-        border           : 1px solid #d35400!important;
-        background-color : #e67e22!important;
+    &danger{
+        border           : 1px solid $x3-color--danger!important;
+        background-color : $x3-color--danger!important;
         color            : #fff!important;
     }
 
-    &red{
-        border           : 1px solid $x3-color--red!important;
-        background-color : $x3-color--red!important;
+    &info{
+        border           : 1px solid $x3-color--info!important;
+        background-color : $x3-color--info!important;
         color            : #fff!important;
     }
 
-    &blue{
-        border           : 1px solid $x3-color--blue!important;
-        background-color : $x3-color--blue!important;
-        color            : #fff!important;
-    }
-
-    &green{
-        border           : 1px solid $x3-color--green!important;
-        background-color : $x3-color--green!important;
+    &succes{
+        border           : 1px solid $x3-color--succes!important;
+        background-color : $x3-color--succes!important;
         color            : #fff!important;
     }
 
@@ -82,8 +74,8 @@ $x3-color--yellow   : #ffd32a;
     }
 
     &secondary{
-        border           : 1px solid $x3_color-secondary!important;
-        background-color : $x3_color-secondary!important;
+        border           : 1px solid $x3-color--secondary!important;
+        background-color : $x3-color--secondary!important;
         color            : #fff!important;
     }
 
@@ -101,19 +93,16 @@ $x3-color--yellow   : #ffd32a;
 
 }
 
-.x3_bgcolor--white{
-    background-color : #fff!important;
-}
 
-.x3_textcolor--,
-.x3_text__color--{
-
-    &red {
-        color: $x3-color--red !important;
-    }
-
-    &primary {
-        color: $x3-color--primary !important;
-    }
-
-}
+//.x3_textcolor--,
+//.x3_text__color--{
+//
+//    &red {
+//        color: $x3-color--danger !important;
+//    }
+//
+//    &primary {
+//        color: $x3-color--primary !important;
+//    }
+//
+//}

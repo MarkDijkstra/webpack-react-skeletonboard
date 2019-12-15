@@ -7,8 +7,10 @@ Last change : --/--/----
 */
 
 body{
-  background-color : $color-body-bg;
-  color            : $color-body-text;
-  font-family      : Arial, Helvetica, sans-serif ;
+    
+  background-color : $theme-body-bg;
+  color            : $theme-base-text;
+  font-family      : Arial, Helvetica, sans-serif;
   font-size        : 14px;
+    
 }

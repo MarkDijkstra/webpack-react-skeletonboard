@@ -9,73 +9,40 @@ Last change : --/--/----
 // https://colors.muz.li/palette/454d66/309975/58b368/dad873/efeeb4
 
 
-$color-body-text        : #555555;
-$color-body-bg          : #f0f1f5;
-$color-primary          : #454d66;
-$color-secondary        : #309975;
+$theme-base-text         : #555555;
+$theme-body-bg           : #f0f1f5;
 
-$color-header-bottom-bg : #ffffff;
-$color-white-text       : #ffffff;
-$color-dark             : #373e4d;
+$theme-primary           : #454d66;
+$theme-secondary         : #309975;
+$theme-secondary-variant : #dad873;
+
+$theme-header-bottom-bg  : #ffffff;
+$theme-white             : #ffffff;
+$theme-dark              : #373e4d;
+$theme-border-color      : #e6e9f0;
 
 
-.header-main{
 
-    &__top{
 
-    }
+$theme-notification-info   : rgb(69, 137, 255);
+$theme-notification-alert  : rgb(253, 209, 58);
+$theme-notification-danger : rgb(218, 30, 40);
+$theme-notification-succes : rgb(36, 161, 72);
 
-    &__bottom{
-        background-color    : $color-header-bottom-bg;
-        border-bottom-color : #ddd;
-        //box-shadow       : 0 4px 4px -2px #999;
-    }
-    
-    &__logo{
-        //background-color : $color-primary;
-        color            : $color-white-text;
-        
-        &:after{  
 
-            //border-color : $color-primary transparent transparent transparent;
 
-        }
 
-    }
-    
-    nav{
-     
-        a{
-            color : $color-white-text;
-        }
-        
-    }
 
-    &__nav{
-
-       // background-color : $color-dark;
-
-        &:after{  
-            
-            //border-color : transparent $color-dark transparent transparent;
-
-        }
-
-        
-    }
-    
-}
 
 .footer-main{
 
-    background-color : #fff;
     color            : #555;
     border-top       : 1px solid #ccc;
 
 }
 
 .card{
-    border: 1px solid #e6e9f0;
+    border: 1px solid #dbdee6;
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;
